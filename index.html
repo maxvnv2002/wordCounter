@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Title -->
+    <title>Word counter</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <h1 class="header__title">Word counter</h1>
+        </div>
+    </header>
+    <section class="main" id="main">
+        <div class="container">
+            <p class="main__result">Слов найдено: <span class="main__digits"></span></p>
+            <div class="main__wrap">
+                <p class="main__input-wrap"><textarea name="text" id="mainInput" class="main__input"></textarea></p>
+                <button class="main__button">Посчитать</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
