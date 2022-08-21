@@ -23,13 +23,40 @@
     </header>
     <section class="main" id="main">
         <div class="container">
-            <p class="main__result">Слов найдено: <span class="main__digits"></span></p>
+            <div class="main__text">
+                <p class="main__result">Введите текст</p>
+                <div class="main__popular">
+                    <p class="main__row">
+                        Самые популярные слова в тексте: <span class="main__word"></span>
+                    </p>
+                    <p class="main__row">
+<!--                        Встречаются <span class="main__meet"></span> раз-->
+                    </p>
+                </div>
+            </div>
             <div class="main__wrap">
                 <p class="main__input-wrap"><textarea name="text" id="mainInput" class="main__input"></textarea></p>
                 <button class="main__button">Посчитать</button>
             </div>
         </div>
+        <div class="popup-wrapper">
+            <div class="popup">
+                <h3 class="popup__title">О сервисе</h3>
+                <ul class="popup__list">
+                    <li>- Посчитает слова в тексте</li>
+                    <li>- Найдет самые популярные слова</li>
+                    <li>- Покажет количество популярных слов</li>
+                </ul>
+                <div class="popup__input">
+                    <input type="checkbox" name="checkbox" id="showNoMore">
+                    <label for="showNoMore" class="checkbox-label"></label>
+                    <label for="showNoMore" class="checkbox-text">Больше не показывать</label>
+                    <div class="popup__button">Скрыть</div>
+                </div>
+            </div>
+        </div>
     </section>
+    <div class="reference">?</div>
     <script src="js/main.js"></script>
 </body>
 </html>
